@@ -6,7 +6,7 @@ char *_getline()
     size_t n;
 
     printf(">>> ");
-    if (getline(*cmd, n, stdin) == -1)
+    if (getline(&cmd, &n, stdin) == -1)
     {
         free(cmd);
         exit(0);
